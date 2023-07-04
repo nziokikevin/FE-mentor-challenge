@@ -16,17 +16,38 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-        <nav class="primary-navigation">
-          <ul aria-label="primary" role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+        <div class="nav-wrapper">
+          <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" >
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul
+              aria-label="primary"
+              role="list"
+              class="nav-list"
+            >
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button" style="display: none">Get Started</button>
+        </div>
       </div>
     </header>
 
@@ -109,7 +130,9 @@
         <div class="container">
           <div class="even-columns">
             <div>
-              <p class="fs-secondary-heading fw-bold">Simplify how your team works today.</p>
+              <p class="fs-secondary-heading fw-bold">
+                Simplify how your team works today.
+              </p>
             </div>
             <div>
               <button class="button" data-type="inverted">Get Started</button>
@@ -123,7 +146,7 @@
       <div class="container">
         <div class="even-columns">
           <div>
-            <a href="#"><img src="images/logo.svg" alt="Manage"></a>
+            <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
             <ul role="list" aria-label="social links">
               <li><a aria-label="facebook" href="#"></a></li>
               <li><a aria-label="youtube" href="#"></a></li>
@@ -147,7 +170,7 @@
           </div>
           <div>
             <form action="">
-              <input type="email">
+              <input type="email" />
               <button class="button">Go</button>
             </form>
             <p>Copyright 2023. All Rights Reserved</p>
